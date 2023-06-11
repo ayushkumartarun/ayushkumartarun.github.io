@@ -5,7 +5,7 @@ layout: default
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">{{ page.title }} {% if page.cv_pdf %}<a href="assets/pdf/CV.pdf" target="_blank" rel="noopener noreferrer" class="float-right"><i class="fas fa-file-pdf"></i></a>{% endif %}</h1>
+            <h1 class="post-title">{{ page.title }} {% if page.cv_pdf %}<a href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" class="float-right"><i class="fas fa-file-pdf"></i></a>{% endif %}</h1>
             <p class="post-description">{{ page.description }}</p>
           </header>
 
@@ -13,10 +13,7 @@ layout: default
 
           <article>
             <div class="cv">
-              <iframe src="https://docs.google.com/gview?url=https://github.com/ayushkumartarun/ayushkumartarun.github.io/blob/92387d0a0b2d435d80c990464dd84d49448b1855/assets/pdf/CV.pdf&embedded=true" style="width:100%; height:100%;" frameborder="0"></iframe>
-  </body>
-</html>
-
+              <iframe width="100%" height="900px" frameborder="0" scrolling="yes" class="embed-responsive-item" src="https://ayushkumartarun.github.io/assets/pdf/CV.pdf" allowfullscreen=""></iframe>
               </div>
           </article>
 
