@@ -19,4 +19,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am deeply captivated by the transformative potential of deep learning and machine learning across diverse domains. My experience spans recommendation systems, computer vision, natural language processing (NLP), and privacy. At present, my research primarily focuses on privacy and security, explainability, and fairness in deep learning.
+Hey, thanks for stopping by! :wave:
+
+I am deeply captivated by the transformative potential of deep learning and machine learning across diverse domains. My experience spans recommendation systems, computer vision, natural language processing (NLP), and privacy. At present, my research primarily focuses on privacy and security, explainability, and fairness in deep learning. 
+
+Previously, I completed my B.E. from BITS Pilani, India. My bachelor thesis was supervised by [Dr. Mohan Kankanhalli](https://www.comp.nus.edu.sg/~mohan/) and [Dr. Murari Mandal](https://murarimandal.github.io/) at National University of Singapore. 
