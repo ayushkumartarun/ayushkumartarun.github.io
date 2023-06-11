@@ -54,7 +54,7 @@ navbar_fixed: true
 footer_fixed: true
 
 # Dimensions
-max_width: 700px
+max_width: 800px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -334,7 +334,7 @@ imagemagick:
     - ".png"
     - ".tiff"
   output_formats:
-    webp: "-resize 700x"
+    webp: "-resize 800x"
 
 # -----------------------------------------------------------------------------
 # Jekyll Diagrams
