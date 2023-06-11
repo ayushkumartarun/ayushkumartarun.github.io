@@ -1,56 +1,56 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://ayushkumartarun.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ayushkumartarun.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-06-11T19:10:02+00:00</updated><id>https://ayushkumartarun.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://ayushkumartarun.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ayushkumartarun.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-06-11T19:18:15+00:00</updated><id>https://ayushkumartarun.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 </subtitle><entry><title type="html">a post with custom blockquotes</title><link href="https://ayushkumartarun.github.io/blog/2023/custom-blockquotes/" rel="alternate" type="text/html" title="a post with custom blockquotes" /><published>2023-05-12T19:53:00+00:00</published><updated>2023-05-12T19:53:00+00:00</updated><id>https://ayushkumartarun.github.io/blog/2023/custom-blockquotes</id><content type="html" xml:base="https://ayushkumartarun.github.io/blog/2023/custom-blockquotes/"><![CDATA[<p>This post shows how to add custom styles for blockquotes. Based on <a href="https://github.com/sighingnow/jekyll-gitbook">jekyll-gitbook</a> implementation.</p>
 
 <p>We decided to support the same custom blockquotes as in <a href="https://sighingnow.github.io/jekyll-gitbook/jekyll/2022-06-30-tips_warnings_dangers.html">jekyll-gitbook</a>, which are also found in a lot of other sites’ styles. The styles definitions can be found on the <a href="https://github.com/alshedivat/al-folio/blob/master/_sass/_base.scss">_base.scss</a> file, more specifically:</p>
 
-<pre><code class="language-scss">/* Tips, warnings, and dangers */
-.post .post-content blockquote {
-    &amp;.block-tip {
-    border-color: var(--global-tip-block);
-    background-color: var(--global-tip-block-bg);
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* Tips, warnings, and dangers */</span>
+<span class="nc">.post</span> <span class="nc">.post-content</span> <span class="nt">blockquote</span> <span class="p">{</span>
+    <span class="k">&amp;</span><span class="nc">.block-tip</span> <span class="p">{</span>
+    <span class="nl">border-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-tip-block</span><span class="p">);</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-tip-block-bg</span><span class="p">);</span>
 
-    p {
-      color: var(--global-tip-block-text);
-    }
+    <span class="nt">p</span> <span class="p">{</span>
+      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-tip-block-text</span><span class="p">);</span>
+    <span class="p">}</span>
 
-    h1, h2, h3, h4, h5, h6 {
-      color: var(--global-tip-block-title);
-    }
-  }
+    <span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span><span class="o">,</span> <span class="nt">h5</span><span class="o">,</span> <span class="nt">h6</span> <span class="p">{</span>
+      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-tip-block-title</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
 
-  &amp;.block-warning {
-    border-color: var(--global-warning-block);
-    background-color: var(--global-warning-block-bg);
+  <span class="k">&amp;</span><span class="nc">.block-warning</span> <span class="p">{</span>
+    <span class="nl">border-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-warning-block</span><span class="p">);</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-warning-block-bg</span><span class="p">);</span>
 
-    p {
-      color: var(--global-warning-block-text);
-    }
+    <span class="nt">p</span> <span class="p">{</span>
+      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-warning-block-text</span><span class="p">);</span>
+    <span class="p">}</span>
 
-    h1, h2, h3, h4, h5, h6 {
-      color: var(--global-warning-block-title);
-    }
-  }
+    <span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span><span class="o">,</span> <span class="nt">h5</span><span class="o">,</span> <span class="nt">h6</span> <span class="p">{</span>
+      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-warning-block-title</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
 
-  &amp;.block-danger {
-    border-color: var(--global-danger-block);
-    background-color: var(--global-danger-block-bg);
+  <span class="k">&amp;</span><span class="nc">.block-danger</span> <span class="p">{</span>
+    <span class="nl">border-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-danger-block</span><span class="p">);</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-danger-block-bg</span><span class="p">);</span>
 
-    p {
-      color: var(--global-danger-block-text);
-    }
+    <span class="nt">p</span> <span class="p">{</span>
+      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-danger-block-text</span><span class="p">);</span>
+    <span class="p">}</span>
 
-    h1, h2, h3, h4, h5, h6 {
-      color: var(--global-danger-block-title);
-    }
-  }
-}
-</code></pre>
+    <span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span><span class="o">,</span> <span class="nt">h5</span><span class="o">,</span> <span class="nt">h6</span> <span class="p">{</span>
+      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-danger-block-title</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <p>A regular blockquote can be used as following:</p>
 
-<pre><code class="language-markdown">&gt; This is a regular blockquote
-&gt; and it can be used as usual
-</code></pre>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; This is a regular blockquote</span>
+<span class="gt">&gt; and it can be used as usual</span>
+</code></pre></div></div>
 
 <blockquote>
   <p>This is a regular blockquote
@@ -59,12 +59,12 @@ and it can be used as usual</p>
 
 <p>These custom styles can be used by adding the specific class to the blockquote, as follows:</p>
 
-<pre><code class="language-markdown">&gt; ##### TIP
-&gt;
-&gt; A tip can be used when you want to give advice
-&gt; related to a certain content.
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; ##### TIP</span>
+<span class="gt">&gt;</span>
+<span class="gt">&gt; A tip can be used when you want to give advice</span>
+<span class="gt">&gt; related to a certain content.</span>
 {: .block-tip }
-</code></pre>
+</code></pre></div></div>
 
 <blockquote class="block-tip">
   <h5 id="tip">TIP</h5>
@@ -73,12 +73,12 @@ and it can be used as usual</p>
 related to a certain content.</p>
 </blockquote>
 
-<pre><code class="language-markdown">&gt; ##### WARNING
-&gt;
-&gt; This is a warning, and thus should
-&gt; be used when you want to warn the user
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; ##### WARNING</span>
+<span class="gt">&gt;</span>
+<span class="gt">&gt; This is a warning, and thus should</span>
+<span class="gt">&gt; be used when you want to warn the user</span>
 {: .block-warning }
-</code></pre>
+</code></pre></div></div>
 
 <blockquote class="block-warning">
   <h5 id="warning">WARNING</h5>
@@ -87,12 +87,12 @@ related to a certain content.</p>
 be used when you want to warn the user</p>
 </blockquote>
 
-<pre><code class="language-markdown">&gt; ##### DANGER
-&gt;
-&gt; This is a danger zone, and thus should
-&gt; be used carefully
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; ##### DANGER</span>
+<span class="gt">&gt;</span>
+<span class="gt">&gt; This is a danger zone, and thus should</span>
+<span class="gt">&gt; be used carefully</span>
 {: .block-danger }
-</code></pre>
+</code></pre></div></div>
 
 <blockquote class="block-danger">
   <h5 id="danger">DANGER</h5>
@@ -104,10 +104,10 @@ be used carefully</p>
 <h2 id="adding-a-table-of-contents">Adding a Table of Contents</h2>
 
 <p>To add a table of contents to a post as a sidebar, simply add</p>
-<pre><code class="language-yml">toc:
-  sidebar: left
-</code></pre>
-<p>to the front matter of the post. The table of contents will be automatically generated from the headings in the post. If you wish to display the sidebar to the right, simply change <code>left</code> to <code>right</code>.</p>
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">toc</span><span class="pi">:</span>
+  <span class="na">sidebar</span><span class="pi">:</span> <span class="s">left</span>
+</code></pre></div></div>
+<p>to the front matter of the post. The table of contents will be automatically generated from the headings in the post. If you wish to display the sidebar to the right, simply change <code class="language-plaintext highlighter-rouge">left</code> to <code class="language-plaintext highlighter-rouge">right</code>.</p>
 
 <h3 id="example-of-sub-heading-1">Example of Sub-Heading 1</h3>
 
@@ -218,12 +218,12 @@ be used carefully</p>
     </div>
 </div>]]></content><author><name></name></author><category term="sample-posts" /><category term="including" /><category term="videos" /><summary type="html"><![CDATA[this is what included videos could look like]]></summary></entry><entry><title type="html">displaying beautiful tables with Bootstrap Tables</title><link href="https://ayushkumartarun.github.io/blog/2023/tables/" rel="alternate" type="text/html" title="displaying beautiful tables with Bootstrap Tables" /><published>2023-03-20T18:37:00+00:00</published><updated>2023-03-20T18:37:00+00:00</updated><id>https://ayushkumartarun.github.io/blog/2023/tables</id><content type="html" xml:base="https://ayushkumartarun.github.io/blog/2023/tables/"><![CDATA[<p>Using markdown to display tables is easy. Just use the following syntax:</p>
 
-<pre><code class="language-markdown">| Left aligned | Center aligned | Right aligned |
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| Left aligned | Center aligned | Right aligned |
 | :----------- | :------------: | ------------: |
 | Left 1       | center 1       | right 1       |
 | Left 2       | center 2       | right 2       |
 | Left 3       | center 3       | right 3       |
-</code></pre>
+</code></pre></div></div>
 
 <p>That will generate:</p>
 
@@ -258,19 +258,19 @@ be used carefully</p>
 
 <p>It is also possible to use HTML to display tables. For example, the following HTML code will display a table with <a href="https://bootstrap-table.com/">Bootstrap Table</a>, loaded from a JSON file:</p>
 
-<pre><code class="language-html">&lt;table
-  id="table"
-  data-toggle="table"
-  data-url="{{ '/assets/json/table_data.json' | relative_url }}"&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th data-field="id"&gt;ID&lt;/th&gt;
-      &lt;th data-field="name"&gt;Item Name&lt;/th&gt;
-      &lt;th data-field="price"&gt;Item Price&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-&lt;/table&gt;
-</code></pre>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;table</span>
+  <span class="na">id=</span><span class="s">"table"</span>
+  <span class="na">data-toggle=</span><span class="s">"table"</span>
+  <span class="na">data-url=</span><span class="s">"{{ '/assets/json/table_data.json' | relative_url }}"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;thead&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"id"</span><span class="nt">&gt;</span>ID<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"name"</span><span class="nt">&gt;</span>Item Name<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"price"</span><span class="nt">&gt;</span>Item Price<span class="nt">&lt;/th&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/thead&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+</code></pre></div></div>
 
 <table data-toggle="table" data-url="/assets/json/table_data.json">
   <thead>
@@ -286,23 +286,23 @@ be used carefully</p>
 
 <p>By using <a href="https://bootstrap-table.com/">Bootstrap Table</a> it is possible to create pretty complex tables, with pagination, search, and more. For example, the following HTML code will display a table, loaded from a JSON file, with pagination, search, checkboxes, and header/content alignment. For more information, check the <a href="https://examples.bootstrap-table.com/index.html">documentation</a>.</p>
 
-<pre><code class="language-html">&lt;table
-  data-click-to-select="true"
-  data-height="460"
-  data-pagination="true"
-  data-search="true"
-  data-toggle="table"
-  data-url="{{ '/assets/json/table_data.json' | relative_url }}"&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th data-checkbox="true"&gt;&lt;/th&gt;
-      &lt;th data-field="id" data-halign="left" data-align="center" data-sortable="true"&gt;ID&lt;/th&gt;
-      &lt;th data-field="name" data-halign="center" data-align="right" data-sortable="true"&gt;Item Name&lt;/th&gt;
-      &lt;th data-field="price" data-halign="right" data-align="left" data-sortable="true"&gt;Item Price&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-&lt;/table&gt;
-</code></pre>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;table</span>
+  <span class="na">data-click-to-select=</span><span class="s">"true"</span>
+  <span class="na">data-height=</span><span class="s">"460"</span>
+  <span class="na">data-pagination=</span><span class="s">"true"</span>
+  <span class="na">data-search=</span><span class="s">"true"</span>
+  <span class="na">data-toggle=</span><span class="s">"table"</span>
+  <span class="na">data-url=</span><span class="s">"{{ '/assets/json/table_data.json' | relative_url }}"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;thead&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">data-checkbox=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/th&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"id"</span> <span class="na">data-halign=</span><span class="s">"left"</span> <span class="na">data-align=</span><span class="s">"center"</span> <span class="na">data-sortable=</span><span class="s">"true"</span><span class="nt">&gt;</span>ID<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"name"</span> <span class="na">data-halign=</span><span class="s">"center"</span> <span class="na">data-align=</span><span class="s">"right"</span> <span class="na">data-sortable=</span><span class="s">"true"</span><span class="nt">&gt;</span>Item Name<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"price"</span> <span class="na">data-halign=</span><span class="s">"right"</span> <span class="na">data-align=</span><span class="s">"left"</span> <span class="na">data-sortable=</span><span class="s">"true"</span><span class="nt">&gt;</span>Item Price<span class="nt">&lt;/th&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/thead&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+</code></pre></div></div>
 
 <table data-click-to-select="true" data-height="460" data-pagination="true" data-search="true" data-toggle="table" data-url="/assets/json/table_data.json">
   <thead>
@@ -318,9 +318,9 @@ be used carefully</p>
 <h2 id="adding-a-table-of-contents">Adding a Table of Contents</h2>
 
 <p>To add a table of contents to a post, simply add</p>
-<pre><code class="language-yml">toc:
-  beginning: true
-</code></pre>
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">toc</span><span class="pi">:</span>
+  <span class="na">beginning</span><span class="pi">:</span> <span class="kc">true</span>
+</code></pre></div></div>
 <p>to the front matter of the post. The table of contents will be automatically generated from the headings in the post.</p>
 
 <h3 id="example-of-sub-heading-1">Example of Sub-Heading 1</h3>
@@ -344,10 +344,10 @@ be used carefully</p>
 <p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p>]]></content><author><name></name></author><category term="sample-posts" /><category term="toc" /><summary type="html"><![CDATA[an example of a blog post with table of contents]]></summary></entry><entry><title type="html">a post with giscus comments</title><link href="https://ayushkumartarun.github.io/blog/2022/giscus-comments/" rel="alternate" type="text/html" title="a post with giscus comments" /><published>2022-12-10T15:59:00+00:00</published><updated>2022-12-10T15:59:00+00:00</updated><id>https://ayushkumartarun.github.io/blog/2022/giscus-comments</id><content type="html" xml:base="https://ayushkumartarun.github.io/blog/2022/giscus-comments/"><![CDATA[<p>This post shows how to add GISCUS comments.</p>]]></content><author><name></name></author><category term="sample-posts" /><category term="external-services" /><summary type="html"><![CDATA[an example of a blog post with giscus comments]]></summary></entry><entry><title type="html">Displaying External Posts on Your al-folio Blog</title><link href="https://ayushkumartarun.github.io/blog/2022/displaying-external-posts-on-your-al-folio-blog/" rel="alternate" type="text/html" title="Displaying External Posts on Your al-folio Blog" /><published>2022-04-23T23:20:09+00:00</published><updated>2022-04-23T23:20:09+00:00</updated><id>https://ayushkumartarun.github.io/blog/2022/displaying-external-posts-on-your-al-folio-blog</id><content type="html" xml:base="https://ayushkumartarun.github.io/blog/2022/displaying-external-posts-on-your-al-folio-blog/"><![CDATA[]]></content><author><name></name></author></entry><entry><title type="html">a post with redirect</title><link href="https://ayushkumartarun.github.io/blog/2022/redirect/" rel="alternate" type="text/html" title="a post with redirect" /><published>2022-02-01T17:39:00+00:00</published><updated>2022-02-01T17:39:00+00:00</updated><id>https://ayushkumartarun.github.io/blog/2022/redirect</id><content type="html" xml:base="https://ayushkumartarun.github.io/blog/2022/redirect/"><![CDATA[<p>Redirecting to another page.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[you can also redirect to assets like pdf]]></summary></entry><entry><title type="html">a distill-style blog post</title><link href="https://ayushkumartarun.github.io/blog/2021/distill/" rel="alternate" type="text/html" title="a distill-style blog post" /><published>2021-05-22T00:00:00+00:00</published><updated>2021-05-22T00:00:00+00:00</updated><id>https://ayushkumartarun.github.io/blog/2021/distill</id><content type="html" xml:base="https://ayushkumartarun.github.io/blog/2021/distill/"><![CDATA[<h2 id="equations">Equations</h2>
 
 <p>This theme supports rendering beautiful math in inline and display modes using <a href="https://www.mathjax.org/">MathJax 3</a> engine.
-You just need to surround your math expression with <code>$$</code>, like <code>$$ E = mc^2 $$</code>.
+You just need to surround your math expression with <code class="language-plaintext highlighter-rouge">$$</code>, like <code class="language-plaintext highlighter-rouge">$$ E = mc^2 $$</code>.
 If you leave it inside a paragraph, it will produce an inline expression, just like \(E = mc^2\).</p>
 
-<p>To use display mode, again surround your expression with <code>$$</code> and place it as a separate paragraph.
+<p>To use display mode, again surround your expression with <code class="language-plaintext highlighter-rouge">$$</code> and place it as a separate paragraph.
 Here is an example:</p>
 
 \[\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)\]
@@ -358,7 +358,7 @@ Here is an example:</p>
 
 <h2 id="citations">Citations</h2>
 
-<p>Citations are then used in the article body with the <code>&lt;d-cite&gt;</code> tag.
+<p>Citations are then used in the article body with the <code class="language-plaintext highlighter-rouge">&lt;d-cite&gt;</code> tag.
 The key attribute is a reference to the id provided in the bibliography.
 The key attribute can take multiple ids, separated by commas.</p>
 
@@ -372,16 +372,16 @@ However, we consider it good style to mention author last names if you discuss s
 
 <h2 id="footnotes">Footnotes</h2>
 
-<p>Just wrap the text you would like to show up in a footnote in a <code>&lt;d-footnote&gt;</code> tag.
+<p>Just wrap the text you would like to show up in a footnote in a <code class="language-plaintext highlighter-rouge">&lt;d-footnote&gt;</code> tag.
 The number of the footnote will be automatically generated.<d-footnote>This will become a hoverable footnote.</d-footnote></p>
 
 <hr />
 
 <h2 id="code-blocks">Code Blocks</h2>
 
-<p>Syntax highlighting is provided within <code>&lt;d-code&gt;</code> tags.
-An example of inline code snippets: <code>&lt;d-code language="html"&gt;let x = 10;&lt;/d-code&gt;</code>.
-For larger blocks of code, add a <code>block</code> attribute:</p>
+<p>Syntax highlighting is provided within <code class="language-plaintext highlighter-rouge">&lt;d-code&gt;</code> tags.
+An example of inline code snippets: <code class="language-plaintext highlighter-rouge">&lt;d-code language="html"&gt;let x = 10;&lt;/d-code&gt;</code>.
+For larger blocks of code, add a <code class="language-plaintext highlighter-rouge">block</code> attribute:</p>
 
 <d-code block="" language="javascript">
   var x = 25;
@@ -390,13 +390,13 @@ For larger blocks of code, add a <code>block</code> attribute:</p>
   }
 </d-code>
 
-<p><strong>Note:</strong> <code>&lt;d-code&gt;</code> blocks do not look good in the dark mode.
-You can always use the default code-highlight using the <code>highlight</code> liquid tag:</p>
+<p><strong>Note:</strong> <code class="language-plaintext highlighter-rouge">&lt;d-code&gt;</code> blocks do not look good in the dark mode.
+You can always use the default code-highlight using the <code class="language-plaintext highlighter-rouge">highlight</code> liquid tag:</p>
 
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">var x = 25;
-function(x) {
-  return x * x;
-}</code></pre></figure>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">25</span><span class="p">;</span>
+<span class="kd">function</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">x</span> <span class="o">*</span> <span class="nx">x</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
 
 <hr />
 
@@ -411,32 +411,32 @@ function(x) {
 <p>The plot must be generated separately and saved into an HTML file.
 To generate the plot that you see above, you can use the following code snippet:</p>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python">import pandas as pd
-import plotly.express as px
-df = pd.read_csv(
-  &#39;https://raw.githubusercontent.com/plotly/datasets/master/earthquakes-23k.csv&#39;
-)
-fig = px.density_mapbox(
-  df,
-  lat=&#39;Latitude&#39;,
-  lon=&#39;Longitude&#39;,
-  z=&#39;Magnitude&#39;,
-  radius=10,
-  center=dict(lat=0, lon=180),
-  zoom=0,
-  mapbox_style=&quot;stamen-terrain&quot;,
-)
-fig.show()
-fig.write_html(&#39;assets/plotly/demo.html&#39;)</code></pre></figure>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="n">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="kn">import</span> <span class="n">plotly.express</span> <span class="k">as</span> <span class="n">px</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="nf">read_csv</span><span class="p">(</span>
+  <span class="sh">'</span><span class="s">https://raw.githubusercontent.com/plotly/datasets/master/earthquakes-23k.csv</span><span class="sh">'</span>
+<span class="p">)</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="p">.</span><span class="nf">density_mapbox</span><span class="p">(</span>
+  <span class="n">df</span><span class="p">,</span>
+  <span class="n">lat</span><span class="o">=</span><span class="sh">'</span><span class="s">Latitude</span><span class="sh">'</span><span class="p">,</span>
+  <span class="n">lon</span><span class="o">=</span><span class="sh">'</span><span class="s">Longitude</span><span class="sh">'</span><span class="p">,</span>
+  <span class="n">z</span><span class="o">=</span><span class="sh">'</span><span class="s">Magnitude</span><span class="sh">'</span><span class="p">,</span>
+  <span class="n">radius</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+  <span class="n">center</span><span class="o">=</span><span class="nf">dict</span><span class="p">(</span><span class="n">lat</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">lon</span><span class="o">=</span><span class="mi">180</span><span class="p">),</span>
+  <span class="n">zoom</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+  <span class="n">mapbox_style</span><span class="o">=</span><span class="sh">"</span><span class="s">stamen-terrain</span><span class="sh">"</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">fig</span><span class="p">.</span><span class="nf">show</span><span class="p">()</span>
+<span class="n">fig</span><span class="p">.</span><span class="nf">write_html</span><span class="p">(</span><span class="sh">'</span><span class="s">assets/plotly/demo.html</span><span class="sh">'</span><span class="p">)</span></code></pre></figure>
 
 <hr />
 
 <h2 id="details-boxes">Details boxes</h2>
 
-<p>Details boxes are collapsible boxes which hide additional information from the user. They can be added with the <code>details</code> liquid tag:</p>
+<p>Details boxes are collapsible boxes which hide additional information from the user. They can be added with the <code class="language-plaintext highlighter-rouge">details</code> liquid tag:</p>
 
 <details><summary>Click here to know more</summary>
-<p>Additional details, where math \(2x - 1\) and <code>code</code> is rendered correctly.</p>
+<p>Additional details, where math \(2x - 1\) and <code class="language-plaintext highlighter-rouge">code</code> is rendered correctly.</p>
 </details>
 
 <hr />
@@ -444,13 +444,13 @@ fig.write_html(&#39;assets/plotly/demo.html&#39;)</code></pre></figure>
 <h2 id="layouts">Layouts</h2>
 
 <p>The main text column is referred to as the body.
-It is the assumed layout of any direct descendants of the <code>d-article</code> element.</p>
+It is the assumed layout of any direct descendants of the <code class="language-plaintext highlighter-rouge">d-article</code> element.</p>
 
 <div class="fake-img l-body">
   <p>.l-body</p>
 </div>
 
-<p>For images you want to display a little larger, try <code>.l-page</code>:</p>
+<p>For images you want to display a little larger, try <code class="language-plaintext highlighter-rouge">.l-page</code>:</p>
 
 <div class="fake-img l-page">
   <p>.l-page</p>
@@ -468,7 +468,7 @@ For instance:</p>
 </div>
 
 <p>Occasionally you’ll want to use the full browser width.
-For this, use <code>.l-screen</code>.
+For this, use <code class="language-plaintext highlighter-rouge">.l-screen</code>.
 You can also inset the element a little from the edge of the browser by using the inset variant.</p>
 
 <div class="fake-img l-screen">
@@ -479,7 +479,7 @@ You can also inset the element a little from the edge of the browser by using th
 </div>
 
 <p>The final layout is for marginalia, asides, and footnotes.
-It does not interrupt the normal flow of <code>.l-body</code> sized text except on mobile screen sizes.</p>
+It does not interrupt the normal flow of <code class="language-plaintext highlighter-rouge">.l-body</code> sized text except on mobile screen sizes.</p>
 
 <div class="fake-img l-gutter">
   <p>.l-gutter</p>
@@ -489,7 +489,7 @@ It does not interrupt the normal flow of <code>.l-body</code> sized text except 
 
 <h2 id="other-typography">Other Typography?</h2>
 
-<p>Emphasis, aka italics, with <em>asterisks</em> (<code>*asterisks*</code>) or <em>underscores</em> (<code>_underscores_</code>).</p>
+<p>Emphasis, aka italics, with <em>asterisks</em> (<code class="language-plaintext highlighter-rouge">*asterisks*</code>) or <em>underscores</em> (<code class="language-plaintext highlighter-rouge">_underscores_</code>).</p>
 
 <p>Strong emphasis, aka bold, with <strong>asterisks</strong> or <strong>underscores</strong>.</p>
 
@@ -544,19 +544,19 @@ example.com (but not on Github, for example).</p>
 <p>Reference-style:
 <img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text" title="Logo Title Text 2" /></p>
 
-<p>Inline <code>code</code> has <code>back-ticks around</code> it.</p>
+<p>Inline <code class="language-plaintext highlighter-rouge">code</code> has <code class="language-plaintext highlighter-rouge">back-ticks around</code> it.</p>
 
-<pre><code class="language-javascript">var s = "JavaScript syntax highlighting";
-alert(s);
-</code></pre>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">s</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">JavaScript syntax highlighting</span><span class="dl">"</span><span class="p">;</span>
+<span class="nf">alert</span><span class="p">(</span><span class="nx">s</span><span class="p">);</span>
+</code></pre></div></div>
 
-<pre><code class="language-python">s = "Python syntax highlighting"
-print s
-</code></pre>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">s</span> <span class="o">=</span> <span class="sh">"</span><span class="s">Python syntax highlighting</span><span class="sh">"</span>
+<span class="k">print</span> <span class="n">s</span>
+</code></pre></div></div>
 
-<pre><code>No language indicated, so no syntax highlighting.
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>No language indicated, so no syntax highlighting.
 But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
-</code></pre>
+</code></pre></div></div>
 
 <p>Colons can be used to align columns.</p>
 
@@ -602,7 +602,7 @@ raw Markdown line up prettily. You can also use inline Markdown.</p>
   <tbody>
     <tr>
       <td><em>Still</em></td>
-      <td><code>renders</code></td>
+      <td><code class="language-plaintext highlighter-rouge">renders</code></td>
       <td><strong>nicely</strong></td>
     </tr>
     <tr>
