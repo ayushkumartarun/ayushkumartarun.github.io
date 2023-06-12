@@ -1,8 +1,9 @@
 ---
 layout: cv
-permalink: ayushkumartarun.github.io/assets/pdf/CV.pdf
+permalink: /cv/
 title: cv
 nav: true
 nav_order: 4
 cv_pdf: CV.pdf
+redirect: ayushkumartarun.github.io/assets/pdf/CV.pdf
 ---
