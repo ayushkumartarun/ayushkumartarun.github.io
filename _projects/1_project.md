@@ -1,8 +1,8 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
+title: SFDocs Markdown Assistant
+description: Helps you to write clean Markdown files faster.
+img: assets/img/SFDocsAsst.png
 importance: 1
 category: work
 ---
