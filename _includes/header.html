@@ -62,13 +62,6 @@
               </li>
               {%- endif %}
 
-              <!-- CV -->
-              <li class="nav-item">
-                <a class="nav-link" href="https://drive.google.com/file/d/1cJLCZ3WGRXkm4JU8_Y6JrSR7ldkXXEVR">
-                  CV
-                </a>
-              </li>
-
               <!-- Other pages -->
               {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
               {%- for p in sorted_pages -%}
@@ -101,7 +94,16 @@
               {%- endif -%}
               {%- endif -%}
               {% endfor -%}
+
+              <!-- CV -->
+              <li class="nav-item">
+                <a class="nav-link" href="https://drive.google.com/file/d/1cJLCZ3WGRXkm4JU8_Y6JrSR7ldkXXEVR">
+                  cv
+                </a>
+              </li>
+
               {%- if site.enable_darkmode %}
+
 
               <!-- Toogle theme mode -->
               <li class="toggle-container">
